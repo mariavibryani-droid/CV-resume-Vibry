@@ -20,20 +20,41 @@ header {
 
 header h1 {
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    padding: 1.5rem
+}
+@media (min-width: 768px){
+    header h1 {
+        font-size: 2rem;
+    }
 }
 
 header p {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 nav ul {
     list-style: none;
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
 }
 
 nav ul li a {
@@ -50,7 +71,7 @@ main {
 
 h2 {
     color: #b71b14;
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     border-bottom: 3px solid #b71b14;
     padding-bottom: 0.5rem;
@@ -61,13 +82,13 @@ h2 {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border: 1px solid #DDDDDD;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .kartu h3 {
     color: #1a1a1a;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
@@ -92,7 +113,7 @@ thead {
 }
 
 th, td {
-    padding: 12px;
+    padding: 0.75rem;
     text-align: left;
     border: 1px solid #DDDDDD;
 }
@@ -107,4 +128,27 @@ footer {
 
 footer strong {
     color: #b71b14;
+}
+
+.kartu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .kartu-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .kartu-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+    header {
+        padding: 1rem;
+    }
 }
