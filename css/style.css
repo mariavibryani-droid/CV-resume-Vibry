@@ -45,7 +45,7 @@ nav ul li {
     margin: 0.5rem 0;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     nav ul {
         display: flex;
         justify-content: center;
@@ -55,6 +55,16 @@ nav ul li {
     nav ul li {
         margin: 0;
     }
+} */
+
+nav ul {
+    list-style: none;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
 }
 
 nav ul li a {
@@ -150,5 +160,41 @@ footer strong {
 @media (max-width: 768px) and (orientation: landscape) {
     header {
         padding: 1rem;
+    }
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#hamburger {
+    display: none;
+    background: white;
+    color: #b71b14;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    #hamburger {
+        display: block;
+        margin: 10px auto;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    #nav-menu.active {
+        display: block;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
     }
 }

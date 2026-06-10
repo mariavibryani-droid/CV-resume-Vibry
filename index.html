@@ -11,10 +11,16 @@
     <header>
         <h1>Maria Vibryani</h1>
         <p>Mahasiswa Manajemen Informasi Kesehatan</p>
-        <nav>
+        <button id="hamburger"
+        aria-label="Buka Menu"
+        aria-expanded="false">
+        ☰
+        </button>
+        <nav id="nav-menu">
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
@@ -31,6 +37,10 @@
 
         <section id="pendidikan">
             <h2>Pendidikan</h2>
+
+            <ul id="pendidikan-list">
+            </ul>
+
             <div class="kartu-container">
                 <article class="kartu">
                     <h3>SMA Negeri 1 Golewa Barat</h3>
